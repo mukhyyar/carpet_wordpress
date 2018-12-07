@@ -45,7 +45,41 @@ get_header(); ?>
 					 </div>
                      </div>
                   </header>
-               </div>           
+               </div>  
+               
+            
+			    <div id="section_1-2" class="cb-slider-item" data-slide-name="about" data-slide-navbar-inverse="true">
+                  <header class="cb-featured">
+                     <div class="cb-featured-preview">
+                        <div class="cb-preview -right">
+                           <div class="cb-preview-fill section_1-2-bg">
+                              
+                           </div>
+                        </div>
+                     </div>
+                     <div class="cb-featured-letter -back" data-letter="g"></div>
+                     <div class="cb-featured-fill bg_blue -color-ewa">
+                        <div class="cb-featured-letter -front" data-letter-pattern="g"></div>
+                        <div class="cb-featured-letter -fallback" data-letter-fallback="g"></div>
+                     </div>
+					   
+                     <div class="cb-featured-body">
+                                 <div class="cb-container -lg">
+                                      <div class="cb-featured-head">
+               			 <div class="cb-featured-label"><h1 class="fttimes"><?php //echo the_field('heading_about');?></h1></div>
+              			</div>
+									<div class="cb-featured-text">
+										<div class="cb-text -xl">
+								<?php echo the_field('content_key_2');?>
+									</div>
+									</div>
+									 <div class="cb-featured-more -color-dsx">
+									 <a hidden class="cb-btn cb-btn_view -magnet" href="http://pwsolution.com/carpet/" role="button"><span class="cb-btn_view-zone"></span><span class="cb-btn_view-box"><span class="cb-btn_view-text"><span>Read More</span></span><span class="cb-btn_view-line"></span></span></a></div>
+                              </div>
+					 </div>
+                  </header>
+               
+            </div>
 				
 				<div id="section_2" class="cb-slider-item" data-slide-name="colorfly" data-slide-navbar-inverse="true">
                   <header class="cb-featured">
@@ -66,13 +100,16 @@ get_header(); ?>
 						  <div class="cb-container -lg">
                           
                            <div class="cb-featured-header">
+							     <div class="cb-featured-head">
+               			 			<div class="cb-featured-label">
                               <h1 class="datehd"><strong>20<sup>th</sup> </strong>January - <strong>14<sup>th</sup></strong> February <strong>2019</strong></h1>
-							   
+							   </div> </div> 
                            </div>
-							   <div  id="timer" class="timer"></div>
+							    <div  id="timer" class="timer"></div>
                            <div class="cb-featured-text">
                            <div class="cb-featured-tags">
-                              <p>a</p>
+                            
+							   <p>a</p>
 							  
                            </div>
                            
@@ -88,7 +125,7 @@ get_header(); ?>
                   <header class="cb-featured">
                      <div class="cb-featured-preview">
                         <div class="cb-preview -right">
-                           <div class="cb-preview-fill section-2-bg">
+                           <div class="cb-preview-fill section-3-bg">
                               
                            </div>
                         </div>
@@ -120,7 +157,7 @@ get_header(); ?>
 				<div id="section_4" class="cb-slider-item" data-slide-name="#" data-slide-navbar-inverse="true">
                   <header class="cb-featured">
                      <div class="cb-featured-preview">
-                        <div class="cb-preview -right">
+                        <div class="cb-preview -right section-4-bg">
                            <div class="cb-preview-fill section-inside-bg">
                               
                            </div>
@@ -159,7 +196,7 @@ get_header(); ?>
 												
 												<div class="col-md-6 col-xs-6">
 													<a href="<?php echo $image['description']?>">
-														 <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"  class="img-responsive"/>
+														 <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 													</a>
 												</div>
 												

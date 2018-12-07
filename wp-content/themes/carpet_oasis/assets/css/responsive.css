@@ -1,0 +1,77 @@
+@media(min-width:320px) and (max-width:414px)
+{
+    .cb-navbar-menu-nav-item {    font-size: 21px;}
+    .languages li a {    font-size: 12px;}
+    .cb-social-item {    font-size: 32px;    margin: -6px 6px;}
+    .cb-navbar-container li {    list-style: none;    margin: 24px 0;}
+    #section_1 h3 {    font-size: 31px;}
+    #section_1 h2 {    font-size: 36px;}
+    #section_1-2 .cb-text.-xl {    font-size: 22px;    line-height: 40px;  color: white;}
+    #section_1 .cb-featured-body {    padding-top: 21%;}
+    #section_1-2 .cb-featured-body {    padding-top: 18%;}
+    #section_2 .cb-featured-body {    padding-top: 24%;}
+    #section_2 .cb-featured-body .cb-container.-lg {    width: 100%;}
+    #section_2 h1 {    font-size: 19px;}
+    #section_2 h1 strong {    font-size: 20px;}
+    #section_3 .cb-featured-body {    padding-top: 60px;}
+    #section_4 img {    width: 102%;}
+    #section_4 .cb-container {    padding-top: 60px;}
+    .inside_page h1 {    font-size: 21px;}
+    .inside_page p {    font-size: 11.4px;}
+    .inside_page img {    width: 96%;}
+    #inside_page .cb-featured-body {    width: 100%;    background: #00000052;    padding-top: 81px;}
+
+}
+
+@media (min-width:374px) and (max-width:375px){ /*iphonex*/
+    .cb-navbar-container li { margin: 11px 0;}
+}
+
+@media(min-width:415px) and (max-width:767px)
+{
+}
+
+
+@media(min-width:768px) and (max-width:812px)
+{
+    .cb-featured {    height: 100%;}
+    .cb-featured-letter {    display: block;}
+    .cb-featured-body {		padding-top:  600px;}
+    #section_3 .cb-featured-body {    padding-top: 496px;}
+    #section_4 .cb-container.-lg{ padding: 0 200px;}
+    #section_4 .cb-featured-body, #section_5  .cb-featured-body {    padding-top: 538px;}
+    #inside_page .cb-featured {    height: 100%;    background: #02020294;}
+    #inside_page .cb-featured-body {padding: 33vh 0 0 0;}
+
+        
+}
+
+@media(min-width:813px) and (max-width:1024px)
+{
+    .cb-featured {    height: 100%;}
+    .cb-featured-letter {    display: block;}
+   #section_1  .cb-container.-lg {   width: 54%;}
+   .datehd {    font-size: 24px;}
+   .datehd strong {    font-size: 23px;}
+   #section_3 .cb-container.-lg {    width: 61%;}
+   #section_5 .cb-container.-lg {    width: 59%;}
+        
+}
+
+@media screen and (max-height:450px)
+{
+
+}
+
+@media(min-width:992px) and (max-width:1282px)
+{
+}
+
+
+@media (min-width:1364px) and (max-width:1366px) {
+#section_1-2 .cb-text.-xl {    font-size: 26px;}
+#section_1 h2 {    font-size: 54px;}
+#section_1 h3 {    font-size: 46px;}
+.cb-navbar-menu-nav-item {    padding: 2px 0;}
+.cb-navbar-menu-nav-item {    font-size: 29px;}
+}
