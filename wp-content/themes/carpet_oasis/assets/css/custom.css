@@ -16361,3 +16361,27 @@ color: white;
 
 
 /* .svg_hide{fill:transparent;} */
+
+
+/* PRELOADER ANIMATION */
+
+.pre_loader_logo {
+   fill:transparent;  
+  stroke:#e83c3b; 
+  stroke-width:1;  
+  stroke-dasharray: 150; 
+  animation: pre_loader_logo 8s linear;
+    animation-iteration-count: infinite;
+
+    
+
+
+}
+
+@keyframes pre_loader_logo {
+  
+  to {
+    stroke-dashoffset: 1500;
+  }
+  
+}
