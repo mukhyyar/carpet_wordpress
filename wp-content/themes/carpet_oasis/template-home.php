@@ -97,24 +97,22 @@ get_header(); ?>
                      </div>
                      <div class="cb-featured-body">
 						 
-						  <div class="cb-container -lg">
-                          
-                           <div class="cb-featured-header">
-							     <div class="cb-featured-head">
-               			 			<div class="cb-featured-label">
-                              <h1 class="datehd"><strong>20<sup>th</sup> </strong>January - <strong>14<sup>th</sup></strong> February <strong>2019</strong></h1>
-							   </div> </div> 
-                           </div>
-							    <div  id="timer" class="timer"></div>
-                           <div class="cb-featured-text">
-                           <div class="cb-featured-tags">
-                            
-							   <p>a</p>
-							  
-                           </div>
-                           
-                        </div>
-                     </div>
+						         <div class="cb-container -lg">
+                                      <div class="cb-featured-head">
+               			 <div class="cb-featured-label"><h1 class="fttimes"><?php //echo the_field('heading_about');?></h1></div>
+              			</div>
+									<div class="cb-featured-text">
+										<div class="cb-text">
+								<p class="para_time">Between the</p>
+								  	<p class="datehd"><strong>20<sup>th</sup> </strong>January - <strong>14<sup>th</sup></strong> February <strong>2019</strong></p>
+							<p  id="timer" class="timer">a</p>
+								<p class="para_time-2">Organized by <strong>Dubai Customs</strong></p>
+
+									</div>
+									</div>
+									 <div class="cb-featured-more -color-dsx">
+									 <a hidden class="cb-btn cb-btn_view -magnet" href="http://pwsolution.com/carpet/" role="button"><span class="cb-btn_view-zone"></span><span class="cb-btn_view-box"><span class="cb-btn_view-text"><span>Read More</span></span><span class="cb-btn_view-line"></span></span></a></div>
+                              </div>
 					 
                      </div>
                   </header>

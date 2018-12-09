@@ -3,7 +3,7 @@
 get_header(); ?>
 
 <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-               <div id="section_1" class="inside_page cb-slider-item -in" data-slide-name="dsx" data-slide-navbar-inverse="true" style="z-index: 5; transform: matrix(1, 0, 0, 1, 0, 0);">
+               <div id="section_1" class="inside_page partners cb-slider-item -in" data-slide-name="dsx" data-slide-navbar-inverse="true" style="z-index: 5; transform: matrix(1, 0, 0, 1, 0, 0);">
                   <header class="cb-featured">
                      <div class="cb-featured-preview">
                         <div class="cb-preview -right">

@@ -1,4 +1,7 @@
 $( document ).ready(function() {
+$('#timer').countdown("2019/01/20", function(event) {
+			  $(this).html(event.strftime( '<span>%D<small>Days</small></span> : <span>%H<small>Hour</small></span> : <span>%M<small>Minutes</small></span> : <span>%S<small>Seconds</small></span>'));
+			});	
 $('.cb-navbar-logo').click(function() {
     window.location.href = $(this).attr('href');;
     return false;
@@ -9,30 +12,45 @@ $('#timer').countdown("2019/01/20", function(event) {
 });
 
 var myFunction = function runNext() {
-    if ($("#section_2").hasClass("-in")) {
+        if ($("#section_1-2").hasClass("-in")) {
 		setTimeout(function() {
-			$( ".cb-navbar-logo img" ).attr('src','https://dms.com.pk/carpet/wp-content/themes/carpet_oasis/assets/img/header/logo_white.png');
-			$('#timer').countdown("2019/01/20", function(event) {
-			  $(this).html(event.strftime( '<span>%D<small>Days</small></span> : <span>%H<small>Hour</small></span> : <span>%M<small>Minutes</small></span> : <span>%S<small>Seconds</small></span>'));
-			});	
+			$( ".cb-navbar-logo .red_logo" ).show();
+			$( ".cb-navbar-logo .white_logo" ).hide();
+			
+        }, 1100); 
+	}
+	else if ($("#section_2").hasClass("-in")) {
+		setTimeout(function() {
+			$( ".cb-navbar-logo .red_logo" ).hide();
+			$( ".cb-navbar-logo .white_logo" ).show();
         }, 1100); 
 	}
 	else if ($("#section_3").hasClass("-in")){
 	   
 		setTimeout(function() {
-             $( ".cb-navbar-logo img" ).attr('src','http://dms.com.pk/carpet/wp-content/themes/carpet_oasis/assets/img/header/logo_white.png');
+             $( ".cb-navbar-logo .red_logo" ).hide();
+			$( ".cb-navbar-logo .white_logo" ).show();
             // $( ".cb-navbar-logo img" ).addClass( "logo_filter-white");
         }, 1100); 
 		
 	}
+	else if ($("#section_4").hasClass("-in")) {
+		setTimeout(function() {
+			$( ".cb-navbar-logo .red_logo" ).show();
+			$( ".cb-navbar-logo .white_logo" ).hide();
+			
+        }, 1100); 
+	}
 	else if ($("#inside_page").hasClass("-in")){
 		
-		 $( ".cb-navbar-logo img" ).attr('src','http://dms.com.pk/carpet/wp-content/themes/carpet_oasis/assets/img/header/logo_white.png');
+		 $( ".cb-navbar-logo .red_logo" ).hide();
+			$( ".cb-navbar-logo .white_logo" ).show();
 	
 
 	}
 	else{
-		 $( ".cb-navbar-logo img" ).attr('src','http://dms.com.pk/carpet/wp-content/themes/carpet_oasis/assets/img/header/logo_red.png');
+		 $( ".cb-navbar-logo .red_logo" ).show();
+			$( ".cb-navbar-logo .white_logo" ).hide();
 		}
 	
 	

@@ -1,9 +1,9 @@
-<?php /* Template Name: About Dubai */ 
+<?php /* Template Name: About Us */ 
 
 get_header(); ?>
 
 <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-               <div id="section_1" class="inside_page cb-slider-item -in" data-slide-name="dsx" data-slide-navbar-inverse="true" style="z-index: 5; transform: matrix(1, 0, 0, 1, 0, 0);">
+               <div id="section_3" class="inside_page cb-slider-item -in" data-slide-name="dsx" data-slide-navbar-inverse="true" style="z-index: 5; transform: matrix(1, 0, 0, 1, 0, 0);">
                   <header class="cb-featured">
                      <div class="cb-featured-preview">
                         <div class="cb-preview -right">
@@ -26,7 +26,7 @@ get_header(); ?>
                                  <div class="cb-container -lg">
 
                                       <div class="cb-featured-header">
-                                            <h1><?php echo get_the_title();?></h1>
+                                            <h1 class="fttimes"><?php echo get_the_title();?></h1>
 									 
 									  <?php the_content(); ?>
 										<!--<h2 class="sec-1-hd"> 

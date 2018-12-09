@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.9.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-12-03 14:46:06+0000\n"
+"PO-Revision-Date: 2018-12-08 00:58:53+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -559,11 +559,6 @@ msgstr "تم تعطيل التسجيل في الموقع."
 msgid "If you do not activate your site within two days, you will have to sign up again."
 msgstr "إذا لم تقم بتفعيل موقعك خلال يومين، سيتوجب عليك التسجيل مرة أخرى."
 
-#. translators: 1: Number of updates available to WordPress
-#: wp-includes/update.php:622
-msgid "%d WordPress Update"
-msgstr "%d تحديث ووردبريس."
-
 #: wp-includes/script-loader.php:898
 msgid ""
 "You are about to permanently delete this menu. \n"
@@ -1059,10 +1054,6 @@ msgstr "نموذج بحث لموقعك."
 msgid "The query argument of %s must have a placeholder."
 msgstr "معامل الإستعلام للدالة %s يجب أن يحتوي على عنصر نائب."
 
-#: wp-includes/user.php:2108
-msgid "Hint: The password should be at least twelve characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! \" ? $ % ^ &amp; )."
-msgstr "تلميح: مفضّل أن تتكوّن كلمة المرور من 7 خانات على الأقل. لجعلها أقوى، استخدم الحروف الكبيرة والصغيرة، الأرقام والرموز مثل ! \" ? $ % ^ &amp; )"
-
 #: wp-includes/widgets/class-wp-widget-search.php:30
 msgctxt "Search widget"
 msgid "Search"
@@ -1163,6 +1154,11 @@ msgstr[3] "%1$s ردود على %2$s"
 msgstr[4] "%1$s رد على %2$s"
 msgstr[5] "%1$s رد على %2$s"
 
+#. translators: User email change notification email subject. 1: Site name
+#: wp-includes/user.php:1949
+msgid "[%s] Notice of Email Change"
+msgstr "[%s] إشعار تغيير البريد الالكتروني"
+
 #. translators: Do not translate USERNAME, ADMIN_EMAIL, EMAIL, SITENAME,
 #. SITEURL: those are placeholders.
 #: wp-includes/user.php:1877
@@ -1193,11 +1189,6 @@ msgstr ""
 "مع التحيّة،\n"
 "###SITENAME###\n"
 "###SITEURL###"
-
-#. translators: User email change notification email subject. 1: Site name
-#: wp-includes/user.php:1949
-msgid "[%s] Notice of Email Change"
-msgstr "[%s] إشعار تغيير البريد الالكتروني"
 
 #: wp-login.php:557
 msgid "Your password reset link has expired. Please request a new link below."
@@ -2042,6 +2033,10 @@ msgctxt "plugin"
 msgid "%s update failed"
 msgstr "فشل تحديث %s"
 
+#: wp-includes/script-loader.php:1191
+msgid "An error occurred. Please try again."
+msgstr "حدث خطأ. يرجى المحاولة مرة أخرى."
+
 #. translators: %s is the name of the city we couldn't locate. * Replace the
 #. examples with cities related to your locale. Test that * they match the
 #. expected location and have upcoming events before * including them. If no
@@ -2052,10 +2047,6 @@ msgstr "فشل تحديث %s"
 #: wp-includes/script-loader.php:1209
 msgid "We couldn&#8217;t locate %s. Please try another nearby city. For example: Kansas City; Springfield; Portland."
 msgstr "تعذر تحديد موقع %s. يرجى تجربة مدينة مجاورة أخرى. على سبيل المثال: كانساس سيتي؛ سبرينغفيلد. بورتلاند."
-
-#: wp-includes/script-loader.php:1191
-msgid "An error occurred. Please try again."
-msgstr "حدث خطأ. يرجى المحاولة مرة أخرى."
 
 #: wp-includes/widgets/class-wp-widget-media-image.php:32
 msgctxt "label for button in the image widget"
@@ -2395,6 +2386,14 @@ msgstr "اسم الموقع: %s"
 msgid "Clear color"
 msgstr "مسح اللون"
 
+#: wp-includes/script-loader.php:810
+msgid "Installation Failed!"
+msgstr "فشل التنصيب!"
+
+#: wp-includes/widgets/class-wp-widget-media-gallery.php:31
+msgid "No images selected"
+msgstr "لم يتم تحديد أي صور"
+
 #. translators: %d: error count
 #: wp-includes/script-loader.php:587 wp-includes/script-loader.php:589
 #: wp-includes/widgets/class-wp-widget-custom-html.php:217
@@ -2407,14 +2406,6 @@ msgstr[2] "هناك خطآن (%d) يجب تصحيحهما قبل أن تتمكن
 msgstr[3] "هناك %d أخطاء يجب تصحيحها قبل أن تتمكن من الحفظ."
 msgstr[4] "هناك %d خطأ يجب تصحيحه قبل أن تتمكن من الحفظ."
 msgstr[5] "هناك %d خطأ يجب تصحيحه قبل أن تتمكن من الحفظ."
-
-#: wp-includes/script-loader.php:810
-msgid "Installation Failed!"
-msgstr "فشل التنصيب!"
-
-#: wp-includes/widgets/class-wp-widget-media-gallery.php:31
-msgid "No images selected"
-msgstr "لم يتم تحديد أي صور"
 
 #: wp-includes/script-loader.php:557
 msgid "Please save your changes in order to share the preview."
@@ -2464,23 +2455,6 @@ msgstr "قد يحتوي هذا الودجت على شفرة قد تعمل بشك
 msgid "This theme doesn&#8217;t support video headers on this page. Navigate to the front page or another page that supports video headers."
 msgstr "هذا القالب لا يدعم استخدام الفيديو في ترويسة هذه الصفحة. انتقل للصفحة الرئيسية أو أي صفحة آخرى تدعم الفيديو في الترويسة."
 
-#: wp-includes/script-loader.php:854
-msgid "No plugins found. Try a different search."
-msgstr "ﻻ توجد إضافات. جرب البحث بطريقة أخرى."
-
-#: wp-includes/taxonomy.php:427
-msgid "Unregistering a built-in taxonomy is not allowed."
-msgstr "إلغاء تسجيل فئة مدمجة غير مسموح."
-
-#. translators: 1: link to new site, 2: login URL, 3: username
-#: wp-signup.php:476
-msgid "%1$s is your new site. <a href=\"%2$s\">Log in</a> as &#8220;%3$s&#8221; using your existing password."
-msgstr "أصبح %1$s هو موقعك الجديد. يمكنك <a href=\"%2$s\">تسجيل الدخول</a> باسم &#8221;%3$s&#8220; باستخدام كلمة المرور الموجودة لديك."
-
-#: wp-includes/taxonomy.php:4170
-msgid "Invalid object ID."
-msgstr "مُعرّف (ID) الكائن غير صالح."
-
 #. translators: Do not translate USERNAME, ADMIN_EMAIL, NEW_EMAIL, EMAIL,
 #. SITENAME, SITEURL: those are placeholders.
 #: wp-includes/user.php:1933
@@ -2510,6 +2484,23 @@ msgstr ""
 "مع التحيّة،\n"
 "###SITENAME###\n"
 "###SITEURL###"
+
+#: wp-includes/script-loader.php:854
+msgid "No plugins found. Try a different search."
+msgstr "ﻻ توجد إضافات. جرب البحث بطريقة أخرى."
+
+#: wp-includes/taxonomy.php:427
+msgid "Unregistering a built-in taxonomy is not allowed."
+msgstr "إلغاء تسجيل فئة مدمجة غير مسموح."
+
+#. translators: 1: link to new site, 2: login URL, 3: username
+#: wp-signup.php:476
+msgid "%1$s is your new site. <a href=\"%2$s\">Log in</a> as &#8220;%3$s&#8221; using your existing password."
+msgstr "أصبح %1$s هو موقعك الجديد. يمكنك <a href=\"%2$s\">تسجيل الدخول</a> باسم &#8221;%3$s&#8220; باستخدام كلمة المرور الموجودة لديك."
+
+#: wp-includes/taxonomy.php:4170
+msgid "Invalid object ID."
+msgstr "مُعرّف (ID) الكائن غير صالح."
 
 #: wp-includes/taxonomy.php:748 wp-includes/taxonomy.php:2657
 #: wp-includes/taxonomy.php:3958
@@ -2855,11 +2846,6 @@ msgstr ""
 "عبر ###SITENAME###\n"
 "###SITEURL###"
 
-#. translators: 1: Site name. 2: Name of the confirmed action.
-#: wp-includes/user.php:2978
-msgid "[%1$s] Action Confirmed: %2$s"
-msgstr "[%1$s] تم تأكيد الإجراء: %2$s"
-
 #. translators: Do not translate SITENAME, SITEURL, PRIVACY_POLICY_URL; those
 #. are placeholders.
 #: wp-includes/user.php:3093
@@ -2888,6 +2874,11 @@ msgstr ""
 "مع التحيّة،\n"
 "عبر ###SITENAME###\n"
 "###SITEURL###"
+
+#. translators: 1: Site name. 2: Name of the confirmed action.
+#: wp-includes/user.php:2978
+msgid "[%1$s] Action Confirmed: %2$s"
+msgstr "[%1$s] تم تأكيد الإجراء: %2$s"
 
 #. translators: Do not translate DESCRIPTION, CONFIRM_URL, SITENAME, SITEURL:
 #. those are placeholders.
@@ -3011,6 +3002,15 @@ msgstr[5] "%d قالب تحتاج إلى تحديث"
 #: wp-includes/theme-compat/embed-404.php:21
 msgid "It looks like nothing was found at this location. Maybe try visiting %s directly?"
 msgstr "يبدو أنه لم يتم العثور على شيء في هذا الموقع. لما لا تجرّب زيارة %s مباشرة؟"
+
+#: wp-includes/user.php:2108
+msgid "Hint: The password should be at least twelve characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! \" ? $ % ^ &amp; )."
+msgstr "تلميح: يفضّل أن تتكوّن كلمة المرور من 12 رمز على الأقل. لجعلها أقوى، استخدم الحروف الكبيرة والصغيرة، الأرقام والرموز مثل ! \" ? $ % ^ &amp; )."
+
+#. translators: 1: Number of updates available to WordPress
+#: wp-includes/update.php:622
+msgid "%d WordPress Update"
+msgstr "تحديث ووردبريس %d"
 
 #: wp-includes/post.php:1450
 msgid "View Post"
@@ -6471,10 +6471,6 @@ msgstr[3] "هناك %d أخطاء يجب إصلاحها قبل أن تتمكن �
 msgstr[4] "هناك %d خطأ يجب إصلاحهم قبل أن تتمكن من تحديث هذا الملف."
 msgstr[5] "هناك %d خطأ يجب إصلاحهم قبل أن تتمكن من تحديث هذا الملف."
 
-#: wp-includes/script-loader.php:478
-msgid "Something went wrong. Your change may not have been saved. Please try again. There is also a chance that you may need to manually fix and upload the file over FTP."
-msgstr "هناك خطأ ما. ربما لم يتم حفظ تعديلك. يرجى المحاولة مرة أخرى. هناك أيضاً فرصة قد تحتاج إلى الإصلاح اليدوي ورفع الملف عبر FTP."
-
 #: wp-includes/query.php:153 wp-includes/query.php:174
 #: wp-includes/query.php:195 wp-includes/query.php:219
 #: wp-includes/query.php:243 wp-includes/query.php:267
@@ -6490,6 +6486,10 @@ msgstr "هناك خطأ ما. ربما لم يتم حفظ تعديلك. يرجى
 #: wp-includes/query.php:699 wp-includes/query.php:719
 msgid "Conditional query tags do not work before the query is run. Before then, they always return false."
 msgstr "الاستعلامات الشرطية لا تعمل قبل تنفيذ الاستعلام. قبل ذلك، ستعيد لك دائماً رسالة خطأ (FALSE)."
+
+#: wp-includes/script-loader.php:478
+msgid "Something went wrong. Your change may not have been saved. Please try again. There is also a chance that you may need to manually fix and upload the file over FTP."
+msgstr "هناك خطأ ما. ربما لم يتم حفظ تعديلك. يرجى المحاولة مرة أخرى. هناك أيضاً فرصة قد تحتاج إلى الإصلاح اليدوي ورفع الملف عبر FTP."
 
 #: wp-includes/ms-functions.php:1212
 msgid "Could not create site."
@@ -10023,6 +10023,16 @@ msgstr "معاينة حيّة للقالب: %s"
 msgid "Install and preview theme: %s"
 msgstr "تنصيب ومعاينة قالب: %s"
 
+#. translators: Site admin email change notification email subject. %s: Site
+#. title
+#: wp-includes/functions.php:5821
+msgid "[%s] Notice of Admin Email Change"
+msgstr "[%s] إشعار بتغيير البريد الإلكتروني للمدير"
+
+#: wp-includes/load.php:1134
+msgid "Scrape nonce check failed. Please try again."
+msgstr "فشل فحص مناسبيّة التجريف. الرجاء المحاولة مرة أخرى."
+
 #. translators: Do not translate OLD_EMAIL, NEW_EMAIL, SITENAME, SITEURL: those
 #. are placeholders.
 #: wp-includes/functions.php:5806
@@ -10050,16 +10060,6 @@ msgstr ""
 "مع التحيّة،\n"
 "###SITENAME###\n"
 "###SITEURL###"
-
-#. translators: Site admin email change notification email subject. %s: Site
-#. title
-#: wp-includes/functions.php:5821
-msgid "[%s] Notice of Admin Email Change"
-msgstr "[%s] إشعار بتغيير البريد الإلكتروني للمدير"
-
-#: wp-includes/load.php:1134
-msgid "Scrape nonce check failed. Please try again."
-msgstr "فشل فحص مناسبيّة التجريف. الرجاء المحاولة مرة أخرى."
 
 #. translators: %s: Template
 #: wp-includes/class-wp-theme.php:255
@@ -12367,6 +12367,14 @@ msgstr "قالبك يحتوي على منطقة ودجت واحد، ولكن ه�
 msgid "Your theme has 1 other widget area, but this particular page doesn&#8217;t display it."
 msgstr "قالبك يحتوي على منطقة ودجت أخرى، ولكن هذه الصفحة تحديدًا لا تقوم بعرضه."
 
+#: wp-includes/class-wp-editor.php:1099
+msgid "Insert/edit code sample"
+msgstr "إدراج/تحرير عينة كود"
+
+#: wp-includes/class-wp-editor.php:1071
+msgid "Id should start with a letter, followed only by letters, numbers, dashes, dots, colons or underscores."
+msgstr "المُعرف يجب أن يبدأ بحرف، متبوعاً فقط بأحرف، أرقام,،شرطات، نقاط، فواصل منقوطة أو خطوط سفلية."
+
 #. translators: %s: the total number of widget areas registered
 #: wp-includes/class-wp-customize-widgets.php:737
 msgid "Your theme has %s widget area, but this particular page doesn&#8217;t display it."
@@ -12389,14 +12397,6 @@ msgstr[2] "قالبك يحتوي على منطقتان ودجت أخرى، ول�
 msgstr[3] "قالبك يحتوي على %s مناطق ودجت أخرى، ولكن هذه الصفحة تحديدًا لا تقوم بعرضهم."
 msgstr[4] "قالبك يحتوي على %s منطقة ودجت أخرى، ولكن هذه الصفحة تحديدًا لا تقوم بعرضهم."
 msgstr[5] "قالبك يحتوي على %s منطقة ودجت أخرى، ولكن هذه الصفحة تحديدًا لا تقوم بعرضهم."
-
-#: wp-includes/class-wp-editor.php:1099
-msgid "Insert/edit code sample"
-msgstr "إدراج/تحرير عينة كود"
-
-#: wp-includes/class-wp-editor.php:1071
-msgid "Id should start with a letter, followed only by letters, numbers, dashes, dots, colons or underscores."
-msgstr "المُعرف يجب أن يبدأ بحرف، متبوعاً فقط بأحرف، أرقام,،شرطات، نقاط، فواصل منقوطة أو خطوط سفلية."
 
 #: wp-includes/class-wp-customize-manager.php:4154
 msgid "Go back"

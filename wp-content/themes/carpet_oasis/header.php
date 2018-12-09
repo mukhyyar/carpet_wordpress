@@ -18,7 +18,7 @@
    
 	   <div class="logo-shield hidden-xs"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/header/shield.png" width="151" alt=""/></div>
       <div   class="cb-loader cb-loader_overlay -front -visible">
-         <div  class="cb-loader_overlay-img"><svg viewBox="0 0 131.1 120.3" width="10%">
+         <div  class="cb-loader_overlay-img"><svg viewBox="0 0 131.1 120.3">
   <path class="pre_loader_logo " d="M72.8,37.5c-12.8,0-23.1,10.4-23.1,23.1c0,12.8,10.4,23.1,23.1,23.1C85.6,83.8,96,73.4,96,60.7	C96,47.9,85.6,37.5,72.8,37.5 M72.8,90.4c-16.4,0-29.7-13.3-29.7-29.7C43.1,44.3,56.5,31,72.8,31c16.4,0,29.7,13.3,29.7,29.7		C102.5,77.1,89.2,90.4,72.8,90.4"></path>	
   <path class="pre_loader_logo " d="M72.8,15.1c-25.1,0-45.6,20.5-45.6,45.6c0,25.1,20.5,45.6,45.6,45.6c6.3,0,12.3-1.2,18-3.7L90,98.1		c-5.4,2.5-11.2,3.7-17.2,3.7c-22.7,0-41.2-18.5-41.2-41.2c0-22.7,18.5-41.2,41.2-41.2c7.9,0,15.4,2.2,21.9,6.3l1.5-4.3		C89.2,17.3,81.1,15.1,72.8,15.1 M72.8,112.8c-28.8,0-52.1-23.4-52.1-52.1c0-28.8,23.4-52.1,52.1-52.1c10.5,0,20.5,3.1,29.2,8.9		l2.1,1.4L98,36.5l-3.6-2.9c-6.2-4.9-13.6-7.5-21.5-7.5c-19.1,0-34.6,15.5-34.6,34.6s15.5,34.6,34.6,34.6c6.3,0,12.5-1.7,17.9-5		l4-2.4l3.5,18.4l-2.2,1.1C88.8,111,81,112.8,72.8,112.8">
     
@@ -36,7 +36,9 @@
                   <div class="cb-navbar-grid-col -left">
 
                      <a class="cb-navbar-logo" href="<?php echo home_url(); ?>">
-                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header/logo_red.png"/>
+                     <img class="red_logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/header/logo_red.png"/>
+					 <img style="display:none;" class="white_logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/header/logo_white.png"/>
+	 
                      </a>
                   </div>
 				  
