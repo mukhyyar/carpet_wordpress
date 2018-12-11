@@ -51,7 +51,7 @@
                             i = o.find(".cb-navbar-menu-fill"),
                             s = o.find(".cb-navbar-menu-nav-item"),
                             l = o.find(".cb-navbar-menu-nav-item span"),
-                            c = o.find(".cb-social-item"),
+                            c = o.find(".cb-social-item,  .cb-social div"),
                             f = c.find(".cb-social-item-inner");
                         return t.fromTo(r, .3, {
                             opacity: 0
@@ -103,7 +103,7 @@
                             i = o.find(".cb-navbar-menu-fill"),
                             s = o.find(".cb-navbar-menu-nav-item"),
                             l = o.find(".cb-navbar-menu-nav-item span"),
-                            c = o.find(".cb-social-item"),
+                            c = o.find(".cb-social-item, .cb-social div"),
                             f = c.find(".cb-social-item-inner");
                         return n ? (t.staggerFromTo(s, .2, {
                             opacity: 1
@@ -125,7 +125,8 @@
                         }, .07, 0), t.staggerFromTo(c, .2, {
                             y: "0%"
                         }, {
-                            y: a("sm") ? "170%" : "120%"
+							//wpml speed border set
+                            y: a("sm") ? "480%" : "120%"
                         }, .05, 0), t.staggerFromTo(f, .2, {
                             y: "0%"
                         }, {
@@ -150,7 +151,7 @@
                             n = o.find(".cb-navbar-menu-fill"),
                             r = o.find(".cb-navbar-menu-nav-item"),
                             i = o.find(".cb-navbar-menu-nav-item span"),
-                            s = o.find(".cb-social-item"),
+                            s = o.find(".cb-social-item, .cb-social div"),
                             l = s.find(".cb-social-item-inner");
                         return t.fromTo(a, .3, {
                             opacity: 1
@@ -2901,8 +2902,9 @@
                     n = o.find(".cb-intro"),
                     i = n.find(".cb-intro-bg svg");
                 if (e.navbarNavItems.filter('[href="/about/"]').addClass("-active"), o.find(".cb-intro-more").on("click", function(t) {
+						console.log(this.getAttribute('href'));
                         t.preventDefault(), t.stopPropagation(), TweenLite.to(window, .8, {
-                            scrollTo: e.window.height(),
+                           scrollTo: this.getAttribute('href'),
                             ease: Power2.easeInOut,
                             autoKill: !1
                         })

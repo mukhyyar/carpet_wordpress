@@ -3,6 +3,12 @@
 get_header(); ?>
 
 <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+
+<div class="cb-view" data-controller="mainController" id="view-main">
+         <div class="cb-slider">
+            <div style="display:none;" class="cb-slider-nav"></div>
+            <div class="cb-slider-items  body-lang-<?php echo ICL_LANGUAGE_CODE; ?>">
+			
                <div id="section_1" class="inside_page cb-slider-item -in" data-slide-name="dsx" data-slide-navbar-inverse="true" style="z-index: 5; transform: matrix(1, 0, 0, 1, 0, 0);">
                   <header class="cb-featured">
                      <div class="cb-featured-preview">
@@ -45,6 +51,10 @@ get_header(); ?>
 					 </div>
                      </div>
                   </header>
+               </div>  
+               </div>  
+               </div>  
+               </div>  
                </div>  
                
             

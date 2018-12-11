@@ -1,14 +1,15 @@
 $( document ).ready(function() {
-$('#timer').countdown("2019/01/20", function(event) {
-			  $(this).html(event.strftime( '<span>%D<small>Days</small></span> : <span>%H<small>Hour</small></span> : <span>%M<small>Minutes</small></span> : <span>%S<small>Seconds</small></span>'));
-			});	
 $('.cb-navbar-logo').click(function() {
     window.location.href = $(this).attr('href');;
     return false;
 });
 //timer
 $('#timer').countdown("2019/01/20", function(event) {
-  $(this).html(event.strftime( '<span>%D<small>Days</small></span> : <span>%H<small>Hour</small></span> : <span>%M<small>Minutes</small></span> : <span>%S<small>Seconds</small></span>'));
+let days = $('#days').html();
+let hour = $('#hour').html();
+let minutes = $('#minutes').html();
+let seconds = $('#seconds').html();
+  $(this).html(event.strftime( '<span>%D<small>'+days+'</small></span> : <span>%H<small>'+hour+'</small></span> : <span>%M<small>'+minutes+'</small></span> : <span>%S<small>'+seconds+'</small></span>'));
 });
 
 var myFunction = function runNext() {
@@ -42,6 +43,13 @@ var myFunction = function runNext() {
         }, 1100); 
 	}
 	else if ($("#inside_page").hasClass("-in")){
+		
+		 $( ".cb-navbar-logo .red_logo" ).hide();
+			$( ".cb-navbar-logo .white_logo" ).show();
+	
+
+	}
+	else if ($("#view-main").hasClass("gallery")){
 		
 		 $( ".cb-navbar-logo .red_logo" ).hide();
 			$( ".cb-navbar-logo .white_logo" ).show();
@@ -86,4 +94,73 @@ $('.cb-preview-fill').click(false);
 // mySVG.drawsvg('animate');
 
 
+//gallary back
+	
+//GALLERY FUNCTIONS
+
+
+    loadGallery(true, 'a.thumbnail');
+
+    //This function disables buttons when needed
+    function disableButtons(counter_max, counter_current) {
+      $('#show-previous-image, #show-next-image')
+        .show();
+      if (counter_max === counter_current) {
+        $('#show-next-image')
+          .hide();
+      } else if (counter_current === 1) {
+        $('#show-previous-image')
+          .hide();
+      }
+    }
+
+    /**
+     *
+     * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
+     * @param setClickAttr  Sets the attribute for the click handler.
+     */
+
+    function loadGallery(setIDs, setClickAttr) {
+      let current_image,
+        selector,
+        counter = 0;
+
+      $('#show-next-image, #show-previous-image')
+        .click(function () {
+          if ($(this)
+            .attr('id') === 'show-previous-image') {
+            current_image--;
+          } else {
+            current_image++;
+          }
+
+          selector = $('[data-image-id="' + current_image + '"]');
+          updateGallery(selector);
+        });
+
+      function updateGallery(selector) {
+        let $sel = selector;
+        current_image = $sel.data('image-id');
+        $('#image-gallery-title')
+          .text($sel.data('title'));
+        $('#image-gallery-image')
+          .attr('src', $sel.data('image'));
+        disableButtons(counter, $sel.data('image-id'));
+      }
+
+      if (setIDs == true) {
+        $('[data-image-id]')
+          .each(function () {
+            counter++;
+            $(this)
+              .attr('data-image-id', counter);
+          });
+      }
+      $(setClickAttr)
+        .on('click', function () {
+          updateGallery($(this));
+        });
+    }
+
+	
 });

@@ -32,6 +32,15 @@
 	#section_5 p {    font-size: 11px;    margin: 5px 0;    line-height: 14px;}
 	#section_5 iframe {    height: 176px;}
 	.cb-loader_overlay-img svg {    width: 43%;    margin-top: -29px;}
+	#view-main.gallery-main .cb-intro-body {     position: relative;   top: 100px;    width: 100%;}
+	#view-main.gallery-main .cb-intro-body a {    text-align: center;    margin-bottom: 7px;}
+	#view-main.gallery-main .cb-illustration.-man {   width: 259px;   right: 77px;}
+	#view-main.gallery-main .cb-btn_view-text span {    font-size: 21px;}
+	#view-main.gallery-main  #image-gallery div {    margin: 16vh 3px;}	
+	.gallery-s-p {    background: #092929;}
+	#view-main.gallery-main h1:after{display:none;}
+	.languages {    float: right;    margin-top: -7px;}
+	#view-main.gallery-main .cb-intro {    min-height: 771px;}
 
 }
 @media(min-width:361px) and (max-width:414px)
@@ -56,6 +65,15 @@
     .cb-navbar-menu-nav > .cb-navbar-container {    padding: 0 7px;    margin-top: -27px;}
 	.cb-navbar-menu-nav-item {    font-size: 24px;}
 	#section_1 .cb-featured-body, #section_1-2 .cb-featured-body {    padding-top: 110px;}
+	#view-main.gallery-main .cb-intro {    min-height: 920px;}
+	#view-main.gallery-main .cb-intro-body {     position: relative;   top: 100px;    width: 100%;}
+	#view-main.gallery-main .cb-intro-body a {    text-align: center;    margin-bottom: 7px;}
+	#view-main.gallery-main .cb-illustration.-man {   width: 259px;   right: 77px;}
+	#view-main.gallery-main .cb-btn_view-text span {    font-size: 21px;}
+	#view-main.gallery-main  #image-gallery div {    margin: 16vh 3px;}	
+	.gallery-s-p {    background: #092929;}
+	#view-main.gallery-main h1:after{display:none;}
+	.languages {    float: right;    margin-top: -7px;}
 	
 }
 @media (min-width:375px){
@@ -121,12 +139,18 @@
 	.the_venue_inside iframe {    height: 320px;}
 	/*new*/
 	.key_msg_2-1 {    font-size: 41px;     line-height: 57px;}
-	.key_msg_2-2 {    font-size: 32px; line-height: 48px;}
+	.key_msg_2-2 {    font-size: 41px; line-height: 48px;}
 	#section_3 p, #section_2.inside_page p, #section_1 p { margin-bottom: 14px;    font-size: 16px;}
 	#section_3 h1, #section_2 h1, #section_1 h1 {    margin-bottom: 10px;}
 	#section_5 p { font-size: 16px;    margin: 8px 0;}
 	#section_5 h1 {    margin-top: 69px;}
 	.cb-navbar-menu-nav a {    height: 48px;}
+	#view-main.gallery-main img {    width: 67%;    margin-left: 20%;}
+	#view-main.gallery-main h1:after {    width: 472px;}
+	#view-main.gallery-main .body-lang-ar h1:after {    width: 386px;}
+	.body-lang-ar #section_1 h3, .body-lang-ar .key_msg_2-1, .body-lang-ar #section_3 h1, .body-lang-ar #section_2.inside_page h1, .body-lang-ar #section_1.inside_page h1 {
+    font-size: 37px;
+}
 }
 
 /*24 inch screen 1920 x 1080 */

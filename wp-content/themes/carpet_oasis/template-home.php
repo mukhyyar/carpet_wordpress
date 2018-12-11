@@ -4,7 +4,11 @@
 
 get_header(); ?>
 
-
+<div class="cb-view" data-controller="mainController" id="view-main">
+         <div class="cb-slider">
+            <div style="display:none;" class="cb-slider-nav"></div>
+            <div class="cb-slider-items  body-lang-<?php echo ICL_LANGUAGE_CODE; ?>">
+			
                <div id="section_1" class="cb-slider-item -in" data-slide-name="dsx" data-slide-navbar-inverse="true" style="z-index: 5; transform: matrix(1, 0, 0, 1, 0, 0);">
                   <header class="cb-featured">
                      <div class="cb-featured-preview">
@@ -103,10 +107,7 @@ get_header(); ?>
               			</div>
 									<div class="cb-featured-text">
 										<div class="cb-text">
-								<p class="para_time">Between the</p>
-								  	<p class="datehd"><strong>20<sup>th</sup> </strong>January - <strong>14<sup>th</sup></strong> February <strong>2019</strong></p>
-							<p  id="timer" class="timer">a</p>
-								<p class="para_time-2">Organized by <strong>Dubai Customs</strong></p>
+								<?php the_field('date_content') ?>
 
 									</div>
 									</div>
@@ -255,7 +256,7 @@ get_header(); ?>
                            <div class="cb-featured-text">
                               <div class="cb-text -xl">
 								    <?php echo the_field('venue_content');?>
-                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40880.453460405944!2d55.16833624306383!3d25.08981679763971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai+-+United+Arab+Emirates!5e0!3m2!1sen!2s!4v1543420918190" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                               
                            </div>
                            <div class="cb-featured-tags">
                               <p>a</p>
@@ -267,6 +268,9 @@ get_header(); ?>
                   </header>
                
             </div>
-		 
+		 </div>
+      </div>
+	   </div>		 
+	   </div>		 
 		 
 <?php get_footer(); ?>

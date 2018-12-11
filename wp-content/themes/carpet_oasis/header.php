@@ -95,7 +95,9 @@
                                <i class="fa fa-youtube-square"></i>
                            </span>
                         </a>
-                        <div class="languages"> <?php do_action( 'wpml_footer_language_selector'); ?></div>
+                        <div class="languages"> 
+						<?php echo icl_post_languages();?>
+						</div>
                   </div>
                      </div>
                   </div>
@@ -105,9 +107,6 @@
 		 </div>
          <div class="cb-navbar-backdrop"></div>
       </nav>
-      <div class="cb-view" data-controller="mainController" id="view-main" >
-         <div class="cb-slider">
-            <div style="display:none;" class="cb-slider-nav"></div>
-            <div class="cb-slider-items  body-lang-<?php echo ICL_LANGUAGE_CODE; ?>">
+     
 			                     	
 
