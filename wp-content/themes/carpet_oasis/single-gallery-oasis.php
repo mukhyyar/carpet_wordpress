@@ -1,5 +1,6 @@
 <?php 
-
+global $post;
+$current_post_id = $post->ID;
 get_header(); ?>
 
 <style>
@@ -139,8 +140,9 @@ $('.cb-intro-more').click(function() {
 			// print_r ($posts);
 			foreach($posts as $key=>$post){
 				  ;
+				if($current_post_id == $post->ID ){ $active = "active";}else{$active = "";}
 			?>
-			 			<a class="cb-intro-more" href="../#<?php echo $post->ID?>" role="button"><b><?php  echo $post->post_title?></b><span></span></a>
+			 			<a class="cb-intro-more menu-gallery <?php echo $active; ?>" href="../#<?php echo $post->ID?>" role="button"><b><?php  echo $post->post_title?></b><span></span></a>
 
 			<?php }
 			

@@ -35,18 +35,35 @@ while ( $loop->have_posts() ) : $loop->the_post();?>
 		  <h1><?php the_title();?></h1>
 		  
 		  <div class="col-md-4 p-l-0">
-		  <div class="gallery-short-detail">
+		 
+		<?php 
+			  
+		if ( !empty( get_the_content() ) ){
+
+			  ?>
+		<div class="gallery-short-detail">
 			<p><?php the_content();?></p>
 			
 		  </div>
-		   <div class="cb-featured-more -color-dsx">
+			  
+		<?php } ?>	  
+		   <div class="cb-featured-more -color-dsx hidden-xs hidden-sm">
 									 <a  class="cb-btn cb-btn_view -magnet" href="<?php  echo get_permalink();?>" role="button"><span class="cb-btn_view-zone"></span><span class="cb-btn_view-box"><span class="cb-btn_view-text"><span><?php echo $readmore;?></span></span><span class="cb-btn_view-line"></span></span></a></div>
 		  
 		  </div>
 		  
 		  <div class="col-md-8">
-		  <?php $img = the_post_thumbnail( 'full' ); ?>
-		  <img src="<?php $img ?>" class="img-responsive"/>
+		  <?php 
+			  //$img = the_post_thumbnail( 'full' ); 
+			   $img = get_the_post_thumbnail_url(get_the_ID(),'full'); 
+
+			  
+			  ?>
+		  <img src="<?php echo $img; ?>" class="img-responsive"/>
+			
+			 <div class="cb-featured-more -color-dsx hidden-md hidden-lg">
+									 <a  class="cb-btn cb-btn_view -magnet" href="<?php  echo get_permalink();?>" role="button"><span class="cb-btn_view-zone"></span><span class="cb-btn_view-box"><span class="cb-btn_view-text"><span><?php echo $readmore;?></span></span><span class="cb-btn_view-line"></span></span></a></div>  
+			  
 		  </div>
 		  
 		  </div>
@@ -62,7 +79,7 @@ while ( $loop->have_posts() ) : $loop->the_post();?>
 			foreach($posts as $key=>$post){
 				  ;
 			?>
-			 			<a class="cb-intro-more" href="#<?php echo $post->ID?>" role="button"><b><?php  echo $post->post_title?></b><span></span></a>
+			 			<a class="cb-intro-more <?php echo $post->ID?>" href="#<?php echo $post->ID?>" role="button"><b><?php  echo $post->post_title?></b><span></span></a>
 
 			<?php }
 			
@@ -101,6 +118,19 @@ $('#'+hash).find('a').trigger('click');
 });
 });
 
+//active li
+
+$( ".cb-intro-more" ).click(function() {
+	var $get_href = $(this).attr('href');
+	//$(this).has($get_href).addClass('active');
+	//$('body').find($get_href).addClass('active');
+     $("a").removeClass("active");
+
+	$('a[href*="'+$get_href+'"]').addClass('active');
+});
+	
+	
+	
 </script>
    
 <?php get_footer(); ?>

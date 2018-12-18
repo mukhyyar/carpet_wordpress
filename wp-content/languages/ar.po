@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.9.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-12-08 00:58:53+0000\n"
+"PO-Revision-Date: 2018-12-15 01:23:20+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,20 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: ar\n"
 "Project-Id-Version: WordPress - 4.9.x\n"
+
+#: wp-activate.php:30
+msgid "A key value mismatch has been detected. Please follow the link provided in your activation email."
+msgstr "تم اكتشاف عدم تطابق قيمة أساسية. يرجى اتبّاع الرابط الذي تم تقديمه في البريد الإلكتروني للتنشيط."
+
+#: wp-includes/class-wp.php:293 wp-includes/ms-deprecated.php:275
+#: wp-includes/ms-deprecated.php:294
+msgid "A variable mismatch has been detected."
+msgstr "تمّ اكتشاف عدم تطابق متغيّر."
+
+#: wp-includes/class-wp.php:293 wp-includes/ms-deprecated.php:275
+#: wp-includes/ms-deprecated.php:294
+msgid "Sorry, you are not allowed to view this item."
+msgstr "عذراً، غير مسموح لك بعرض هذا العنصر."
 
 #: wp-includes/widgets.php:179
 msgid "Sidebar"
@@ -3692,11 +3706,11 @@ msgstr "تمّ تجاوز الذاكرة. يرجى المحاولة من جدي�
 msgid "You have been added to this site. Please visit the <a href=\"%s\">homepage</a> or <a href=\"%s\">log in</a> using your username and password."
 msgstr "تمّت إضافتك إلى هذا الموقع. رجاء زيارة <a href=\"%s\">الصفحة الرئيسية</a> أو <a href=\"%s\">تسجيل الدخول</a> باستخدام اسم مستخدمك وكلمة مرورك."
 
-#: wp-includes/ms-deprecated.php:406
+#: wp-includes/ms-deprecated.php:411
 msgid "<strong>ERROR</strong>: problem creating site entry."
 msgstr "<strong>خطأ</strong>: مشكلة في إنشاء الصفحة الرئيسية للموقع."
 
-#: wp-includes/ms-deprecated.php:399
+#: wp-includes/ms-deprecated.php:404
 msgid "<strong>ERROR</strong>: Site URL already taken."
 msgstr "<strong>خطأ</strong>: رابط هذه الموقع مستخدم سابقاً."
 
@@ -6862,11 +6876,11 @@ msgstr "المقالة السابقة"
 msgid "Unapproved"
 msgstr "لم تتم الموافقة عليها"
 
-#: wp-includes/functions.php:4729 wp-includes/functions.php:4733
+#: wp-includes/functions.php:4764 wp-includes/functions.php:4768
 msgid "UTC"
 msgstr "UTC"
 
-#: wp-includes/functions.php:2626 wp-includes/ms-functions.php:2047
+#: wp-includes/functions.php:2661 wp-includes/ms-functions.php:2047
 msgid "Please try again."
 msgstr "الرجاء المحاولة مرة أخرى."
 
@@ -6894,7 +6908,7 @@ msgid "Post Comment"
 msgstr "إرســال التعليق"
 
 #. translators: %s: site name
-#: wp-includes/functions.php:2610
+#: wp-includes/functions.php:2645
 msgid "You are attempting to log out of %s"
 msgstr "أنت تحاول تسجيل الخروج من %s"
 
@@ -6918,7 +6932,7 @@ msgstr[5] "%s دقيقة"
 msgid "Monday"
 msgstr "الإثنين"
 
-#: wp-includes/functions.php:4737
+#: wp-includes/functions.php:4772
 msgid "Manual Offsets"
 msgstr "تعديلات يدويّة"
 
@@ -6990,12 +7004,12 @@ msgstr "تسجيل الخروج"
 msgid "Remember Me"
 msgstr "تذكرني"
 
-#: wp-includes/functions.php:4684
+#: wp-includes/functions.php:4719
 msgid "Select a city"
 msgstr "اختر مدينة"
 
 #. translators: 1: PHP function name, 2: version number
-#: wp-includes/functions.php:4048
+#: wp-includes/functions.php:4083
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s أستدعيت بواسطة مُعطى <strong>مهجور</strong> منذ النسخة %2$s ولا يوجد بديل متوفّر حالياً."
 
@@ -7040,7 +7054,7 @@ msgstr "لم يتم التمكن من تحديث حالة التعليق"
 msgid "Cancel reply"
 msgstr "إلغاء الرد"
 
-#: wp-includes/user.php:285 wp-includes/functions.php:5349
+#: wp-includes/user.php:285 wp-includes/functions.php:5384
 msgid "Please log in again."
 msgstr "الرجاء تسجيل الدخول مرة أخرى"
 
@@ -7064,7 +7078,7 @@ msgstr "التعليقات الأحدث &raquo;"
 msgid "Stylesheet is missing."
 msgstr "ملف <code>style.css</code> الخاص بالقالب يحتوي على أخطاء."
 
-#: wp-includes/functions.php:2751
+#: wp-includes/functions.php:2786
 msgid "&laquo; Back"
 msgstr "&laquo; الرجوع"
 
@@ -7232,7 +7246,7 @@ msgstr "الأحد"
 msgid "Tuesday"
 msgstr "الثلاثاء"
 
-#: wp-includes/general-template.php:3716
+#: wp-includes/general-template.php:3734
 msgid "&laquo; Previous"
 msgstr "&laquo; الصفحة السابقة"
 
@@ -7299,7 +7313,7 @@ msgstr "كل ساعة"
 msgid "Once Daily"
 msgstr "مرة واحدة يومياُ"
 
-#: wp-includes/general-template.php:3717
+#: wp-includes/general-template.php:3735
 msgid "Next &raquo;"
 msgstr "التالي &raquo;"
 
@@ -7528,12 +7542,12 @@ msgstr "معرف المرفق (ID) غير صالح."
 
 #. translators: Developer debugging message. 1: PHP function name, 2:
 #. Explanatory message, 3: Version information message
-#: wp-includes/functions.php:4161
+#: wp-includes/functions.php:4196
 msgid "%1$s was called <strong>incorrectly</strong>. %2$s %3$s"
 msgstr "%1$s تمّ استدعائه بشكل <strong>غير صحيح</strong>. %2$s %3$s"
 
 #. translators: %s: version number
-#: wp-includes/functions.php:4154
+#: wp-includes/functions.php:4189
 msgid "(This message was added in version %s.)"
 msgstr "(هذه الرسالة تمّت إضافتها في النسخة %s.)"
 
@@ -7551,7 +7565,7 @@ msgstr "تصفّح المقالات"
 msgid "The timezone you have entered is not valid. Please select a valid timezone."
 msgstr "المنطقة الزمنية التي أدخلتها غير صالحة. المرجو تحديد منطقة زمنية صالحة."
 
-#: wp-includes/general-template.php:3900
+#: wp-includes/general-template.php:3918
 msgctxt "admin color scheme"
 msgid "Blue"
 msgstr "الأزرق"
@@ -7562,16 +7576,16 @@ msgstr "الأزرق"
 msgid "Scripts and styles should not be registered or enqueued until the %1$s, %2$s, or %3$s hooks."
 msgstr "النصوص (scripts) والأنماط (styles) لا يجب أن تكون مسجّلة أو موجودة في الانتظار (enqueued) قبل الخطاطيف (hooks): %1$s, %2$s, أو %3$s."
 
-#: wp-includes/wp-db.php:1577 wp-includes/functions.php:3792
+#: wp-includes/wp-db.php:1577 wp-includes/functions.php:3827
 #: wp-includes/ms-load.php:455
 msgid "Error establishing a database connection"
 msgstr "خطأ في إنشاء اتصال بقاعدة البيانات"
 
-#: wp-includes/functions.php:3788
+#: wp-includes/functions.php:3823
 msgid "Database Error"
 msgstr "خطأ في قاعدة البيانات"
 
-#: wp-includes/general-template.php:3802 wp-includes/formatting.php:3361
+#: wp-includes/general-template.php:3820 wp-includes/formatting.php:3361
 msgid "&hellip;"
 msgstr "&hellip;"
 
@@ -7978,7 +7992,7 @@ msgstr "عنوان ووردبريس (URL)"
 msgid "Site Address (URL)"
 msgstr "عنوان الموقع (URL)"
 
-#: wp-includes/script-loader.php:569 wp-includes/functions.php:5348
+#: wp-includes/script-loader.php:569 wp-includes/functions.php:5383
 msgid "Session expired"
 msgstr "انتهت صلاحية الجلسة"
 
@@ -7997,7 +8011,7 @@ msgctxt "submit button"
 msgid "Search"
 msgstr "بحث"
 
-#: wp-includes/functions.php:5350
+#: wp-includes/functions.php:5385
 msgid "The login page will open in a new window. After logging in you can close it and return to this page."
 msgstr "صفحة تسجيل الدخول ستفتح في نافذة جديدة. بعد تسجيل الدخول يمكنك إغلاقها والعودة إلى هذه الصفحة."
 
@@ -8256,12 +8270,12 @@ msgstr "اجل,اذا,اذما,اذن,الا,الالاء,الالى,التي,ا
 msgid "The theme directory \"%s\" does not exist."
 msgstr "دليل القالب \"%s\" غير موجود."
 
-#: wp-includes/general-template.php:3894
+#: wp-includes/general-template.php:3912
 msgctxt "admin color scheme"
 msgid "Light"
 msgstr "الفاتح"
 
-#: wp-includes/general-template.php:3883
+#: wp-includes/general-template.php:3901
 msgctxt "admin color scheme"
 msgid "Default"
 msgstr "الافتراضي"
@@ -8270,7 +8284,7 @@ msgstr "الافتراضي"
 msgid "Use commas instead of %s to separate excluded terms."
 msgstr "استخدم الفواصل بدلاً من %s لفصل العناصر المستثناة."
 
-#: wp-includes/general-template.php:3906
+#: wp-includes/general-template.php:3924
 msgctxt "admin color scheme"
 msgid "Midnight"
 msgstr "منتصف الليل"
@@ -8279,22 +8293,22 @@ msgstr "منتصف الليل"
 msgid "Attempted to set image quality outside of the range [1,100]."
 msgstr "حاولت ضبط جودة الصورة خارج النطاق [1,100]."
 
-#: wp-includes/general-template.php:3918
+#: wp-includes/general-template.php:3936
 msgctxt "admin color scheme"
 msgid "Ectoplasm"
 msgstr "أكتوبلازما"
 
-#: wp-includes/general-template.php:3930
+#: wp-includes/general-template.php:3948
 msgctxt "admin color scheme"
 msgid "Coffee"
 msgstr "القهوة"
 
-#: wp-includes/general-template.php:3912
+#: wp-includes/general-template.php:3930
 msgctxt "admin color scheme"
 msgid "Sunrise"
 msgstr "شروق الشمس"
 
-#: wp-includes/general-template.php:3924
+#: wp-includes/general-template.php:3942
 msgctxt "admin color scheme"
 msgid "Ocean"
 msgstr "المحيط"
@@ -8757,7 +8771,7 @@ msgstr "دليل الـ %s لمستودع التطوير يجب أن يُستخ�
 
 #. translators: 1: PHP function name, 2: version number, 3: optional message
 #. regarding the change
-#: wp-includes/functions.php:4045
+#: wp-includes/functions.php:4080
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s! %3$s"
 msgstr "%1$s أستدعيت بواسطة مُعطى <strong>مهجور</strong> منذ النسخة %2$s! %3$s"
 
@@ -8766,16 +8780,16 @@ msgstr "%1$s أستدعيت بواسطة مُعطى <strong>مهجور</strong> 
 #. translators: 1: PHP file name, 2: version number, 3: alternative file name
 #. translators: 1: WordPress hook name, 2: version number, 3: alternative hook
 #. name
-#: wp-includes/functions.php:3853 wp-includes/functions.php:3981
-#: wp-includes/functions.php:4104
+#: wp-includes/functions.php:3888 wp-includes/functions.php:4016
+#: wp-includes/functions.php:4139
 msgid "%1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "%1$s <strong>مهجورة</strong> منذ النسخة %2$s استخدم %3$s بدلاً منها."
 
 #. translators: 1: PHP function name, 2: version number
 #. translators: 1: PHP file name, 2: version number
 #. translators: 1: WordPress hook name, 2: version number
-#: wp-includes/functions.php:3856 wp-includes/functions.php:3984
-#: wp-includes/functions.php:4107
+#: wp-includes/functions.php:3891 wp-includes/functions.php:4019
+#: wp-includes/functions.php:4142
 msgid "%1$s is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s <strong>مهجورة</strong> منذ النسخة %2$s ولا يوجد بديل متوفّر حالياً."
 
@@ -8805,7 +8819,7 @@ msgid "'tain't,'twere,'twas,'tis,'twill,'til,'bout,'nuff,'round,'cause,'em"
 msgstr "'tain't,'twere,'twas,'tis,'twill,'til,'bout,'nuff,'round,'cause,'em"
 
 #. translators: 1: PHP class name, 2: version number, 3: __construct() method
-#: wp-includes/functions.php:3919
+#: wp-includes/functions.php:3954
 msgid "The called constructor method for %1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "استدعاء البُنية لـ %1$s <strong>قد تمّ الإستغناء عنها</strong> منذُ الإصدار %2$s استخدم %3$s بدلاً منها."
 
@@ -8935,7 +8949,7 @@ msgstr "&#8220;%s&#8221;"
 msgid "<strong>ERROR</strong>: %1$s in %2$s can only contain numbers, letters, and underscores."
 msgstr "<strong>خطأ</strong>: %1$s في %2$s يمكن أن يحتوي فقط على أرقام، حروف وشرطات سُفلية."
 
-#: wp-includes/functions.php:4158
+#: wp-includes/functions.php:4193
 msgid "https://codex.wordpress.org/Debugging_in_WordPress"
 msgstr "https://codex.wordpress.org/Debugging_in_WordPress"
 
@@ -8956,7 +8970,7 @@ msgid "(Current: %s)"
 msgstr "(القائمة الحالية: %s)"
 
 #. translators: %s: Codex URL
-#: wp-includes/functions.php:4157
+#: wp-includes/functions.php:4192
 msgid "Please see <a href=\"%s\">Debugging in WordPress</a> for more information."
 msgstr "من فضلك اطلع على <a href=\"%s\">تنقيح الأخطاء في ووردبريس</a> لمزيد من المعلومات."
 
@@ -9229,7 +9243,7 @@ msgstr "معالج الجزء يجب أن يطبع (echo) المحتوى أو ي
 
 #. translators: 1: PHP class name, 2: PHP parent class name, 3: version number,
 #. 4: __construct() method
-#: wp-includes/functions.php:3915
+#: wp-includes/functions.php:3950
 msgid "The called constructor method for %1$s in %2$s is <strong>deprecated</strong> since version %3$s! Use %4$s instead."
 msgstr "طريقة البناء المُستدعاة لـ %1$s في %2$s أصبحت <strong>مهجورة</strong> منذ النسخة %3$s! استخدم %4$s بدلاً عنها."
 
@@ -9610,7 +9624,7 @@ msgid "Click to edit this element."
 msgstr "انقر لتحرير هذا العنصر."
 
 #. translators: %s: logout URL
-#: wp-includes/functions.php:2617
+#: wp-includes/functions.php:2652
 msgid "Do you really want to <a href=\"%s\">log out</a>?"
 msgstr "هل أنت متأكد بأنك تريد <a href=\"%s\">تسجيل الخروج</a>؟"
 
@@ -9902,7 +9916,7 @@ msgstr "البحث عن قوالب&hellip;"
 msgid "%s themes"
 msgstr "%s قالب"
 
-#: wp-includes/functions.php:5742
+#: wp-includes/functions.php:5777
 msgid "Only UUID V4 is supported at this time."
 msgstr "فقط UUID V4 وحده المدعوم حاليًا."
 
@@ -10025,7 +10039,7 @@ msgstr "تنصيب ومعاينة قالب: %s"
 
 #. translators: Site admin email change notification email subject. %s: Site
 #. title
-#: wp-includes/functions.php:5821
+#: wp-includes/functions.php:5856
 msgid "[%s] Notice of Admin Email Change"
 msgstr "[%s] إشعار بتغيير البريد الإلكتروني للمدير"
 
@@ -10035,7 +10049,7 @@ msgstr "فشل فحص مناسبيّة التجريف. الرجاء المحاو
 
 #. translators: Do not translate OLD_EMAIL, NEW_EMAIL, SITENAME, SITEURL: those
 #. are placeholders.
-#: wp-includes/functions.php:5806
+#: wp-includes/functions.php:5841
 msgid ""
 "Hi,\n"
 "\n"
@@ -10085,17 +10099,17 @@ msgstr "أنقر على &#8221;إضافة صورة جديدة&#8220; لرفع م
 msgid "Time to add some links! Click &#8220;%s&#8221; to start putting pages, categories, and custom links in your menu. Add as many things as you&#8217;d like."
 msgstr "حان الوقت لإضافة بعض الروابط! أنقر على &#8221;%s&#8220; للبدء بإضافة صفحات، تصنيفات، وروابط مخصصة للقائمة الخاصة بك. يمكنك إضافة العديد من العناصر كما تريد."
 
-#: wp-includes/functions.php:2621
+#: wp-includes/functions.php:2656
 msgid "The link you followed has expired."
 msgstr "انتهت صلاحية الرابط الذي اتبعته."
 
 #. translators: deleted long text
-#: wp-includes/functions.php:5962
+#: wp-includes/functions.php:5997
 msgid "This content was deleted by the author."
 msgstr "هذا المحتوى تم حذفه بواسطة الكاتب."
 
 #. translators: deleted text
-#: wp-includes/functions.php:5958
+#: wp-includes/functions.php:5993
 msgid "[deleted]"
 msgstr "[تم الحذف]"
 
@@ -10150,7 +10164,7 @@ msgctxt "feed link"
 msgid "&raquo;"
 msgstr "&laquo;"
 
-#: wp-load.php:92 wp-includes/functions.php:2763
+#: wp-load.php:92 wp-includes/functions.php:2798
 msgid "WordPress &rsaquo; Error"
 msgstr "ووردبريس &lsaquo; خطأ"
 
@@ -10160,7 +10174,7 @@ msgctxt "daily archives date format"
 msgid "F j, Y"
 msgstr "j F، Y"
 
-#: wp-includes/functions.php:5333
+#: wp-includes/functions.php:5368
 msgid "Close dialog"
 msgstr "إغلاق النافذة"
 
@@ -10173,28 +10187,28 @@ msgstr "مقالة جديدة"
 msgid "Title"
 msgstr "العنوان"
 
-#: wp-activate.php:87 wp-includes/script-loader.php:841
+#: wp-activate.php:132 wp-includes/script-loader.php:841
 #: wp-includes/script-loader.php:842
 msgid "Activate"
 msgstr "تفعيل"
 
-#: wp-activate.php:124
+#: wp-activate.php:30 wp-activate.php:165
 msgid "An error occurred during the activation"
 msgstr "حصل خطأ ما أثناء التفعيل"
 
-#: wp-activate.php:135 wp-signup.php:230
+#: wp-activate.php:177 wp-signup.php:230
 msgid "Username:"
 msgstr "اسم المستخدم:"
 
-#: wp-activate.php:99 wp-activate.php:132
+#: wp-activate.php:140 wp-activate.php:174
 msgid "Your account is now active!"
 msgstr "حسابك الآن مفعّل!"
 
-#: wp-activate.php:83
+#: wp-activate.php:128
 msgid "Activation Key:"
 msgstr "مفتاح التفعيل:"
 
-#: wp-activate.php:80
+#: wp-activate.php:125
 msgid "Activation Key Required"
 msgstr "مفتاح التفعيل مطلوب"
 
@@ -10207,7 +10221,7 @@ msgstr "تسجيل الخروج"
 msgid "Visit Site"
 msgstr "زيارة الموقع"
 
-#: wp-activate.php:136 wp-includes/post-template.php:1611
+#: wp-activate.php:178 wp-includes/post-template.php:1611
 msgid "Password:"
 msgstr "كلمة المرور:"
 
@@ -10733,12 +10747,12 @@ msgid "Pingback:"
 msgstr "تنبيه:"
 
 #. translators: 1: login URL, 2: network home URL
-#: wp-activate.php:151
+#: wp-activate.php:193
 msgid "Your account is now activated. <a href=\"%1$s\">Log in</a> or go back to the <a href=\"%2$s\">homepage</a>."
 msgstr "حسابك الآن مفعّل. <a href=\"%1$s\">سجل الدخول</a> أو ارجع إلى <a href=\"%2$s\">الصفحة الرئيسية</a>."
 
 #. translators: 1: site URL, 2: login URL
-#: wp-activate.php:146
+#: wp-activate.php:188
 msgid "Your account is now activated. <a href=\"%1$s\">View your site</a> or <a href=\"%2$s\">Log in</a>"
 msgstr "حسابك الآن مفعّل. <a href=\"%1$s\">مشاهدة الموقع</a> أو <a href=\"%2$s\">تسجيل الدخول</a>"
 
@@ -10792,7 +10806,7 @@ msgid "New"
 msgstr "جديد"
 
 #. translators: 1: login URL, 2: username, 3: user email, 4: lost password URL
-#: wp-activate.php:105
+#: wp-activate.php:146
 msgid "Your account has been activated. You may now <a href=\"%1$s\">log in</a> to the site using your chosen username of &#8220;%2$s&#8221;. Please check your email inbox at %3$s for your password and login instructions. If you do not receive an email, please check your junk or spam folder. If you still do not receive an email within an hour, you can <a href=\"%4$s\">reset your password</a>."
 msgstr "تم تفعيل حسابك. يمكنك الآن <a href=\"%1$s\">تسجيل الدخول</a> للموقع باسم المستخدم &#8220;%2$s&#8221;. رجاءً، مراجعة صندوق البريد الوارد في بريدك الإلكتروني %3$s للحصول على كلمة المرور وقراءة التعليمات. في حال عدم وصول الرسالة إلى صندوق البريد الوارد، قم بالبحث عنها في صندوق الرسائل المهملة أو في صندوق الرسائل المزعجة (سبام). إن لم تصلك الرسالة في غضون ساعة يمكنك طلب <a href=\"%4$s\">استعادة كلمة المرور</a>."
 
@@ -11018,7 +11032,7 @@ msgid "Background"
 msgstr "خلفية"
 
 #: wp-includes/admin-bar.php:830 wp-includes/class-wp-customize-widgets.php:412
-#: wp-includes/functions.php:3729
+#: wp-includes/functions.php:3764
 msgid "Widgets"
 msgstr "ودجات"
 
@@ -12581,7 +12595,7 @@ msgstr[4] "القالب الخاص بك يدعم %s قائمة. حدّد مكا�
 msgstr[5] "القالب الخاص بك يدعم %s قائمة. حدّد مكان ظهور كل قائمة."
 
 #. translators: 1: site URL, 2: username, 3: user email, 4: lost password URL
-#: wp-activate.php:114
+#: wp-activate.php:155
 msgid "Your site at %1$s is active. You may now log in to your site using your chosen username of &#8220;%2$s&#8221;. Please check your email inbox at %3$s for your password and login instructions. If you do not receive an email, please check your junk or spam folder. If you still do not receive an email within an hour, you can <a href=\"%4$s\">reset your password</a>."
 msgstr "أصبح موقعك الآن لدى %1$s مفعّلاً. تستطيع تسجيل الدخول لموقعك باستخدام اسم المستخدم الخاص بك &#8220;%2$s&#8221;. يرجى مراجعة صندوق البريد الوارد في بريدك الإلكتروني  %3$s للحصول على كلمة المرور وقراءة التعليمات. في حال عدم وصول الرسالة إلى صندوق البريد الوارد، الرجاء قم بالبحث عنها في صندوق الرسائل المهملة. إذا لم تصلك الرسالة في غضون ساعة يمكنك طلب <a href=\"%4$s\">استعادة كلمة المرور</a>."
 
@@ -12712,7 +12726,7 @@ msgstr "%s يقوم بعدّة تغييرات على تخصيص الموقع ب�
 
 #: wp-includes/script-loader.php:133 wp-includes/script-loader.php:565
 #: wp-includes/script-loader.php:645 wp-includes/script-loader.php:850
-#: wp-includes/class-wp-xmlrpc-server.php:3689 wp-includes/functions.php:2631
+#: wp-includes/class-wp-xmlrpc-server.php:3689 wp-includes/functions.php:2666
 #: wp-includes/class-wp-customize-manager.php:450
 msgid "Something went wrong."
 msgstr "حدث خطأ ما."

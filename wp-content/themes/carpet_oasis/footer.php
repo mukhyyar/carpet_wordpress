@@ -7,6 +7,7 @@
       <script src="<?php echo get_template_directory_uri(); ?>/assets/js/animations.js"></script>
 	  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/countdown.js"></script>
 
+
 	 <!-- <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.drawsvg.min.js"></script>-->
 
 	  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/custom.js"></script>
